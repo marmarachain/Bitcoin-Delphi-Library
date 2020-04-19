@@ -199,7 +199,8 @@ var
   json: string;
   aa: tjsonvalue;
   tx: TJSONArray;
-  en: TJSONArrayEnumerator;
+  //en: TJSONArrayEnumerator;
+  en: TJSONArray.TEnumerator;
 begin
   json := post
     (format('{"jsonrpc": "1.0", "id":"BTCExposed", "method": "getblock", "params": ["%s"] }',
